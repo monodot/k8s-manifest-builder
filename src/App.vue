@@ -10,6 +10,8 @@
       <label><input type="radio" id="json" value="json" v-model="format" /> JSON</label>
     </p>
 
+    <JsonEditorExample/>
+
     <Pod/>
     <Deployment/>
     <Service/>
@@ -40,6 +42,7 @@
 import Pod from './components/Pod.vue'
 import Deployment from './components/Deployment.vue'
 import Service from './components/Service.vue'
+import JsonEditorExample from './components/JsonEditorExample.vue'
 
 // Add states and methods to the root component here
 export default {
@@ -47,7 +50,8 @@ export default {
   components: {
     Pod,
     Deployment,
-    Service
+    Service,
+    JsonEditorExample
   },
   data() {
     return {
